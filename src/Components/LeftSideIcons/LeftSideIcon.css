@@ -1,0 +1,13 @@
+.paddingicon{
+    padding: 12px;
+}
+.borderRight{
+    border-right: 1px solid #d9d8d8;
+}
+.icon-bar{
+    display: grid;
+}
+.icon-bar a {
+    padding: 10px;
+    cursor: pointer;
+}

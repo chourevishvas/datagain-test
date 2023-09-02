@@ -1,0 +1,22 @@
+.removeUlBullet{
+    list-style-type: none
+}
+.removeUlBullet li i{
+padding-right: 6px;
+}
+.side-bar{
+    display: grid;
+}
+
+.side-bar a {
+    padding: 1px;
+    cursor: pointer;
+    color: black;
+}
+
+.side-bar a li:hover {
+    background-color: #d4dbe1;
+  }
+  .activeName{
+    background: #d4dbe1;
+  }
