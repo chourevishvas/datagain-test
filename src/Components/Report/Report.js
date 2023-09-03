@@ -70,10 +70,10 @@ function Report() {
 
             <div>Use Date</div>
             <input  onChange={(e)=>setUsedata(e.target.value)} type="radio" id="html" name="fav_language" value="HTML" />
-            <label for="html">Collected</label><br></br>
-            <div className='d-flex justify-content-end'>
+            <label  className="p-2" for="html">Collected</label><br></br>
+            {/* <div className='d-flex justify-content-end'>
 
-            </div>
+            </div> */}
             <div className='card'>
                 <div className='card-body p-2 d-flex justify-content-end'>
                 <button className='btn btn-info rounded-pill ' onClick={()=>submitFunction()}>Submit</button>           

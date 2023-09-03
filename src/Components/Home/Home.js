@@ -4,11 +4,12 @@ import LeftSideIcons from '../LeftSideIcons/LeftSideIcon';
 import Calender from '../Calender/Calender';
 import Workorder from '../Workorder/Workorder';
 import Report from '../Report/Report';
-import Sidebar from '../SideBar/Sidebar'
+import Sidebar from '../SideBar/Sidebar';
+import Donors from '../Donors/Donors'
 
 
 function Home() {
-    const [selectedCompName, setSelectedCompName] = useState("Donate")
+    const [selectedCompName, setSelectedCompName] = useState("Calender Type")
 
     const getName = (name) => {
         console.log(name)
@@ -20,13 +21,16 @@ function Home() {
                 <div className='col-md-1 borderRight'>
                     <LeftSideIcons />
                 </div>
-                <div className='col-md-3'>
+                <div className='col-md-3 borderRight'>
                     <Sidebar getName={getName} />
                 </div>
                 <div className='col-md-8'>
-                    {selectedCompName} Compoent
+                    {selectedCompName} 
                     {selectedCompName == 'Reports' && <Report />}
                     {selectedCompName == 'Work Order' && <Workorder/>}
+                    {selectedCompName == 'Calender Type' && <Calender/>}
+                    {selectedCompName == 'Donors' && <Donors/>}
+
 
 
                 </div>

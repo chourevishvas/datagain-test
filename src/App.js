@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home/Home'
+import RoutesComp from './RoutesComp';
 
 
 function App() {
   return (
     <div >
-        <Home/>
+        <RoutesComp/>
     </div>
   );
 }
