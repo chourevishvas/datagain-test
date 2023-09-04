@@ -26,7 +26,7 @@ function Home() {
                 </div>
                 <div className='col-md-8'>
                     {selectedCompName} 
-                    {selectedCompName == 'Reports' && <Report />}
+                    {selectedCompName == 'Reports' && <Report/>}
                     {selectedCompName == 'Work Order' && <Workorder/>}
                     {selectedCompName == 'Calender Type' && <Calender/>}
                     {selectedCompName == 'Donors' && <Donors/>}

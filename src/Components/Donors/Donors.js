@@ -5,7 +5,7 @@ import DataTable from 'react-data-table-component';
 
 function Donors() {
     const[donorsData ,setDonorsData] =useState("")
-    useEffect(()=>{getDonorsData();},[])
+    useEffect(()=>{getDonorsData()},[])
     const getDonorsData = () => {
         axios.get('https://jsonplaceholder.typicode.com/photos')
             .then(data => setDonorsData(data.data))

@@ -62,7 +62,7 @@ function Calender() {
    setevents(updatedEvent)
   }
   
-  let firstDaty = 1;
+  let firstDate = 10;
   return (
     <div>
       {/* Event inputs */}
@@ -79,7 +79,7 @@ function Calender() {
             </div>
       <FullCalendar
         defaultView="dayGridMonth"
-        firstDay={firstDaty}
+        firstDay={firstDate}
         locale="english"
         header={{
           left: "prev,next",

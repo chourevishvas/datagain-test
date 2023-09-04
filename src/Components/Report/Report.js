@@ -29,26 +29,30 @@ function Report() {
             <div className='p-2 text-dark-50 '> <strong>Reports</strong></div>
             <div className='row'>
                 <div class="col mb-3">
-                <select onChange={(e)=>setReportType(e.target.value)} className="form-control" aria-label="Default select report type">
+                    <select onChange={(e)=>setReportType(e.target.value)} className="form-control" aria-label="Default select report type">
                         <option selected>Select report type</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="monthly">Monthly</option>
-                    </select>                </div>
-
-
+                    </select>
+                </div>
             </div>
 
             <div class="row">
                 <div className="col mb-3">
+                    <label>Start Date</label>
                     <input  onChange={(e)=>setStartDate(e.target.value)} type="date" className="form-control" placeholder="Start Date" aria-label="Start Date" />
                 </div>
                 <div className="col mb-3">
+                <label>End Date</label>
+
                     <input  onChange={(e)=>setDueDate(e.target.value)} type="date" className="form-control" placeholder="Due Date" aria-label="Due Date" />
                 </div>
             </div>
             <div className="row">
                 <div className="col mb-3">
+                <label>Agency</label>
+
                     <select  onChange={(e)=>setAgency(e.target.value)} className="form-control" aria-label="Default select example">
                         <option selected>Agency</option>
                         <option value="1">One</option>
@@ -58,6 +62,8 @@ function Report() {
                     {/* <input type="text" class="form-control" placeholder="First name" aria-label="First name" /> */}
                 </div>
                 <div className="col mb-3">
+                <label>Format</label>
+
                     <select  onChange={(e)=>setFormat(e.target.value)} className="form-control" aria-label="Default select example">
                         <option selected>Format</option>
                         <option value="1">One</option>

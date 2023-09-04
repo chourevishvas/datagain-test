@@ -247,7 +247,8 @@ function Workorder() {
             onClick={() => setAction("Add")}
             data-target="#exampleModal"
           >
-            Create Order</button>
+            Create Order
+          </button>
 
         </div>
       </div>
